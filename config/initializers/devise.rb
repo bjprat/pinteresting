@@ -13,6 +13,7 @@ Devise.setup do |config|
   config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
   
   #Required for devise 3.1 and greater.
+  config.allow_insecure_token_lookup = true
   config.allow_insecure_sign_in_after_confirmation = true
 
   # Configure the class responsible to send e-mails.
